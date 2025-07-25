@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ps-web-socket-service
+server:
+  port: ${SERVER_PORT:8085}
