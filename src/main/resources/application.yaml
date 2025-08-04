@@ -1,5 +1,8 @@
 spring:
   application:
     name: ps-web-socket-service
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
 server:
   port: ${SERVER_PORT:8085}

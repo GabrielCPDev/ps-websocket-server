@@ -13,7 +13,7 @@ class WebSocketConfig(private val handler: SimpleWebSocketHandler) : WebFluxConf
 
     @Bean
     fun handlerMapping(): SimpleUrlHandlerMapping {
-        val map = mapOf("/ws/status" to handler)
+        val map = mapOf("/ws/client-status/{tenant}" to handler)
         return SimpleUrlHandlerMapping().apply {
             order = -1
             urlMap = map
