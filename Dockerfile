@@ -1,11 +1,11 @@
-FROM gradle:8.4.0-jdk17 AS builder
+FROM gradle:8.4.0-jdk21 AS builder
 
 WORKDIR /build
 COPY --chown=gradle:gradle . .
 
 RUN gradle bootJar -x test
 
-FROM eclipse-temurin:17-jdk-jammy
+FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
 

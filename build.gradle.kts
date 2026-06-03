@@ -6,11 +6,11 @@ plugins {
 }
 
 group = "com.iggdrasil"
-version = "1.0.0-RELEASE"
+version = "1.1.0-RELEASE"
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
+		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
